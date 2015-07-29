@@ -2,8 +2,8 @@
 API KEY  = 76380357c675c74b5d5328157ec1ba35:16:72582646
 
 
- &fq=The New York Times
- searching the whole new york times
+MDIwMDA2OTAyMDE0MzgxODI1Mjk2OThmZg001 api key for NPR
 
- 
-SEARCH STRUCTURE = http://api.nytimes.com/svc/search/v2/articlesearch.json?q=obama&page=2&sort=newest&api-key=76380357c675c74b5d5328157ec1ba35:16:72582646
+http://api.npr.org/query?id=1007,3&numResults=10&apiKey=MDIwMDA2OTAyMDE0MzgxODI1Mjk2OThmZg001&output=json
+
+list.story[9].text.paragraph.$text

@@ -1,3 +1,10 @@
 body {
   background: #687894;
 }
+
+#article-div {
+  background-color: white;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+}
