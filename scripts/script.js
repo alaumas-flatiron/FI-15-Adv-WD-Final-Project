@@ -17,6 +17,9 @@ $(document).ready(function(){
     };
     
      
+
+
+   
     
     
            // defines vars in terms of JSON
