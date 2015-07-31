@@ -4,8 +4,6 @@ $(document).ready(function(){
 
    
   
-  
-  
   $('#a-active').click(function() {
     
     $('#article-heading').html(" ");
@@ -57,14 +55,16 @@ $.getJSON('http://api.npr.org/query?id=1001&meta=inherit&apiKey=MDIwMDA2OTAyMDE0
          var us_story = result.list.story[1].text.paragraph[i].$text;
          console.log(us_story);
          $('#article-paragraph').append("<p>" + us_story + "</p>");
+       
     };
      };
-   
-  $('#article-heading').append("<h1>" + us_title + "</h1>");
+    $('#article-heading').append("<h1>" + us_title + "</h1>");
     $('#article-heading').append("<h3> by " + us_author + "</h3>");
-  ('#article-paragraph').html("<p>" + full_us_story() + "</p>");
+   ('#article-paragraph').append("<p>" + full_us_story() + "</p>");
+ 
 
 });
+   
  
 
 });
