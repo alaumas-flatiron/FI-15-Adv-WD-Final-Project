@@ -2,14 +2,7 @@
 
 $(document).ready(function(){
 
-   $('#welcome').click(function() {
-     $('#article-heading').html(" ");
-     $('#article-paragraph').html(" ");
-     $('#home-page').html('<div id="article-heading"><h1>WELCOME TO ONE ARTICLE A DAY!</h1><h4>We scrape articles from NPR (National Public Radio) and only display one article a day. If you don\'t have time to read the entire newspaper, just visit this website. You will receive the most important news, one article a day!</h4></div><div id="article-div"><p id="article-paragraph"></p></div>');
-  
-   });
- 
-  
+   
   
   $('#a-active').click(function() {
     
@@ -50,16 +43,16 @@ $.getJSON('http://api.npr.org/query?id=1001&meta=inherit&apiKey=MDIwMDA2OTAyMDE0
     
   $.getJSON('http://api.npr.org/query?id=1003&meta=inherit&apiKey=MDIwMDA2OTAyMDE0MzgxODI1Mjk2OThmZg001&output=json', function(result){
    
-    var us_title = result.list.story[1].title.$text;
-    var us_author = result.list.story[1].byline[0].name.$text;
-    var us_paragraph = result.list.story[1].text.paragraph;
+    var us_title = result.list.story[0].title.$text;
+    var us_author = result.list.story[0].byline[0].name.$text;
+    var us_paragraph = result.list.story[0].text.paragraph;
 
    
     var i = 0;
     
      var full_us_story = function(){
      for (i = 0; i<= us_paragraph.length; i++) {
-         var us_story = result.list.story[1].text.paragraph[i].$text;
+         var us_story = result.list.story[0].text.paragraph[i].$text;
          console.log(us_story);
          $('#article-paragraph').append("<p>" + us_story + "</p>");
        
