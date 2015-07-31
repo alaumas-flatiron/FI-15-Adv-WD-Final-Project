@@ -9,7 +9,7 @@ list.story[9].text.paragraph.$text
 slate 205 215 214 = #CDD7D6
 chocolate 179 163 148 = #B3A394
 navy 16 37 66   = #102542
-colral 248 112 96 = #F87060
+coral 248 112 96 = #F87060
 RGB FORMAT CONVERT TO HEX CODE
 
 http://api.npr.org/query?id=1001&numResults=10&apiKey=MDIwMDA2OTAyMDE0MzgxODI1Mjk2OThmZg001&output=json

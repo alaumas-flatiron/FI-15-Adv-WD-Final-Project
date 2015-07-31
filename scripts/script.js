@@ -2,7 +2,14 @@
 
 $(document).ready(function(){
 
-   
+   $('#welcome').click(function() {
+     $('#article-heading').html(" ");
+     $('#article-paragraph').html(" ");
+     $('#home-page').html('<div id="article-heading"><h1>WELCOME TO ONE ARTICLE A DAY!</h1><h4>We scrape articles from NPR (National Public Radio) and only display one article a day. If you don\'t have time to read the entire newspaper, just visit this website. You will receive the most important news, one article a day!</h4></div><div id="article-div"><p id="article-paragraph"></p></div>');
+  
+   });
+ 
+  
   
   $('#a-active').click(function() {
     

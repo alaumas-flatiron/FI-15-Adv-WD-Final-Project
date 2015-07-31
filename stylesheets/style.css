@@ -1,9 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300);
 
 body {
 /*   background: #BDC3C7; */
   background: #B3A394;
   
+}
+
+#welcome {
+  font-family: 'Oswald', sans-serif;
+  color: gray;
+  font-weight: lighter;
+  font-size: 20px;
+  margin: 0 auto ;
 }
 
 #header {
